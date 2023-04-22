@@ -16,6 +16,8 @@ public class TextEditor {
         Style style2 = StyleFactory.getStyle("CalibriBlue14");
         Style style3 = StyleFactory.getStyle("VerdanaBlack16");
         Style style4 = StyleFactory.getStyle("HelveticaGreen18");
+        Style style5 = StyleFactory.getStyle("CalibriBlue14");
+
 
 
         File file = new File("/Users/yennhidang/Documents/cpp/swe/hw4/flyweight/text.doc");
@@ -27,25 +29,31 @@ public class TextEditor {
 
             bufferedWriter.write("<html>");
             bufferedWriter.write("<font face='" + style1.getFont().getName() + "' color='" + toHexString(style1.getColor()) + "' size='" + style1.getFont().getSize() + "'>");
-            bufferedWriter.write("Line 1");
+            bufferedWriter.write("HelloWorldCS5800");
             bufferedWriter.write("</font>");
 
             bufferedWriter.write("<br>");
 
             bufferedWriter.write("<font face='" + style2.getFont().getName() + "' color='" + toHexString(style2.getColor()) + "' size='" + style2.getFont().getSize() + "'>");
-            bufferedWriter.write("Line 2");
+            bufferedWriter.write("HelloWorldCS5800");
             bufferedWriter.write("</font>");
 
             bufferedWriter.write("<br>");
 
             bufferedWriter.write("<font face='" + style3.getFont().getName() + "' color='" + toHexString(style3.getColor()) + "' size='" + style3.getFont().getSize() + "'>");
-            bufferedWriter.write("Line 3");
+            bufferedWriter.write("HelloWorldCS5800");
             bufferedWriter.write("</font>");
 
             bufferedWriter.write("<br>");
 
             bufferedWriter.write("<font face='" + style4.getFont().getName() + "' color='" + toHexString(style4.getColor()) + "' size='" + style4.getFont().getSize() + "'>");
-            bufferedWriter.write("Line 4");
+            bufferedWriter.write("HelloWorldCS5800");
+            bufferedWriter.write("</font>");
+
+            bufferedWriter.write("<br>");
+
+            bufferedWriter.write("<font face='" + style5.getFont().getName() + "' color='" + toHexString(style5.getColor()) + "' size='" + style5.getFont().getSize() + "'>");
+            bufferedWriter.write("Repeated style: HelloWorldCS5800");
             bufferedWriter.write("</font>");
             bufferedWriter.write("</html>");
 
