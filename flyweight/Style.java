@@ -1,7 +1,10 @@
 package flyweight;
 
+import java.awt.Color;
+import java.awt.Font;
+
 public interface Style {
-    void assignFont();
-    void assignColor();
-    void assignSize();
+    Font getFont();
+    Color getColor();
+    String getDescription();
 }
